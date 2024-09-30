@@ -17,6 +17,23 @@ struct ContentView: View {
 //        }
 //        .background(.red)
 //        .frame(width: 200, height: 200)
+        VStack {
+            Text("Gryffindor")
+                .font(.largeTitle)
+            Text("Hufflepuff")
+            Text("Ravenclaw")
+            Text("Slytherin")
+        }
+        .font(.caption2)
+        
+        VStack {
+            Text("Gryffindor")
+                .blur(radius: 0)
+            Text("Hufflepuff")
+            Text("Ravenclaw")
+            Text("Slytherin")
+        }
+        .blur(radius: 5)
         
         Button("Hello, world!") {
             useRedText.toggle()
