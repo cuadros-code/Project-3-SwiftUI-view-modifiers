@@ -25,6 +25,9 @@ struct ContentView: View {
     
     var body: some View {
         
+        
+        CapsuleText(text: "Kevin Cuadros")
+        
         spells
         
         spellsList
@@ -63,6 +66,20 @@ struct ContentView: View {
             .background(.green)
             .padding()
             .background(.yellow)
+    }
+}
+
+struct CapsuleText: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .padding()
+            .font(.largeTitle)
+            .foregroundStyle(.white)
+            .background(.blue)
+            .clipShape(.capsule)
     }
 }
 
