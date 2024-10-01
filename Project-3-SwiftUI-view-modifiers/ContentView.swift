@@ -92,7 +92,6 @@ struct CapsuleText: View {
     }
 }
 
-
 struct TitleModifiers: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -111,7 +110,6 @@ extension View {
 }
 
 // ---------------------- //
-
 struct Watermark: ViewModifier {
     
     var text: String
