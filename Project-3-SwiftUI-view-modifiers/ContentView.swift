@@ -11,12 +11,25 @@ struct ContentView: View {
     
     @State private var useRedText = false
     
+    var spells: some View {
+        Group {
+            Text("Lumos")
+            Text("Obliviate")
+        }
+    }
+    
+    @ViewBuilder var spellsList: some View {
+        Text("Lumos 2 ")
+        Text("Obliviate 2")
+    }
+    
     var body: some View {
-//        Button("Hello, world!") {
-//            print(type(of: self.body))
-//        }
-//        .background(.red)
-//        .frame(width: 200, height: 200)
+        
+        spells
+        
+        spellsList
+        
+        
         VStack {
             Text("Gryffindor")
                 .font(.largeTitle)
